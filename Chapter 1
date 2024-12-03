@@ -1,0 +1,49 @@
+import random
+
+# This will create a named scientist to interact with
+def scientist():
+    global npcName
+    global response
+    # List of possible responses
+    responses = ["Welcome to the lab.", "Are you ready to explore the multiverse?", "Do you need help with the device?"]
+    npcNameChoice = ["Dr. Smith", "Dr. Johnson", "Dr. Brown", "Dr. Taylor"]
+    # Shuffle the list to get a random order
+    random.shuffle(npcNameChoice)
+    npcName = npcNameChoice[0]
+    print(f"{npcName}: Hello, I am {npcName}. Would you like to talk to me?")
+    random.shuffle(responses)
+    answer = input("Press 'y' to talk to the scientist: ")
+    if answer == "y":
+        print(f"{npcName}: {responses[0]}")
+    else:
+        print(f"{npcName}: Goodbye")
+
+# Function to explore the lab and gather information
+def explore_lab():
+    print("You are in the lab filled with advanced technology and cryptic notes.")
+    print("The holographic displays flicker as you walk by, revealing snippets of your mentor's research.")
+    # Add more actions and interactions here
+
+# Function to solve initial puzzles to activate the portal
+def solve_puzzles():
+    print("Solving puzzles to activate the portal...")
+    print("You carefully piece together the clues left behind by your mentor.")
+    # Add puzzle-solving logic here
+
+# Function to enter the first parallel universe
+def enter_parallel_universe():
+    print("Entering the first parallel universe...")
+    print("The portal hums to life, and you step through into the unknown.")
+    # Add logic for entering the parallel universe here
+
+# Main function to run the game
+def main():
+    print("Welcome to the Sci-Fi Adventure Game!")
+    scientist()
+    explore_lab()
+    solve_puzzles()
+    enter_parallel_universe()
+
+if __name__ == "__main__":
+    main()
+
