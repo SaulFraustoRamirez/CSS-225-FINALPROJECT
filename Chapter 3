@@ -1,0 +1,46 @@
+# This will create a named inhabitant to interact with
+def inhabitant():
+    global npcName
+    global response
+    # List of possible responses
+    responses = ["Welcome to our utopia.", "Can you help us with a problem?", "Enjoy the harmony of our world."]
+    npcNameChoice = ["Eve", "Liam", "Sophia", "Noah"]
+    # Shuffle the list to get a random order
+    random.shuffle(npcNameChoice)
+    npcName = npcNameChoice[0]
+    print(f"{npcName}: Hello, I am {npcName}. Would you like to talk to me?")
+    random.shuffle(responses)
+    answer = input("Press 'y' to talk to the inhabitant: ")
+    if answer == "y":
+        print(f"{npcName}: {responses[0]}")
+    else:
+        print(f"{npcName}: Goodbye")
+
+# Function to interact with the peaceful inhabitants
+def interact_inhabitants():
+    print("Interacting with the peaceful inhabitants and learning about their society.")
+    print("The inhabitants are friendly and eager to share their knowledge with you.")
+    # Add more actions and interactions here
+
+# Function to uncover a hidden threat
+def uncover_threat():
+    print("Uncovering a hidden threat that could destabilize this perfect world...")
+    print("You discover a secret plot that threatens the harmony of this utopia.")
+    # Add logic for uncovering the threat here
+
+# Function to secure the second piece of the artifact
+def secure_artifact():
+    print("Securing the second piece of the artifact...")
+    print("You find the artifact in a hidden chamber, its glow illuminating the room.")
+    # Add logic for securing the artifact here
+
+# Main function to run the third chapter
+def chapter_three():
+    print("Welcome to Chapter 3: Utopia!")
+    inhabitant()
+    interact_inhabitants()
+    uncover_threat()
+    secure_artifact()
+
+if __name__ == "__main__":
+    chapter_three()
