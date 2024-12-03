@@ -1,0 +1,46 @@
+# This will create a named faction leader to interact with
+def faction_leader():
+    global npcName
+    global response
+    # List of possible responses
+    responses = ["We need your help in this war.", "Can you assist us with a mission?", "Stay alert, the enemy is near."]
+    npcNameChoice = ["Commander Rex", "General Zara", "Captain Leo", "Lieutenant Mia"]
+    # Shuffle the list to get a random order
+    random.shuffle(npcNameChoice)
+    npcName = npcNameChoice[0]
+    print(f"{npcName}: Hello, I am {npcName}. Would you like to talk to me?")
+    random.shuffle(responses)
+    answer = input("Press 'y' to talk to the faction leader: ")
+    if answer == "y":
+        print(f"{npcName}: {responses[0]}")
+    else:
+        print(f"{npcName}: Goodbye")
+
+# Function to navigate through the warzone
+def navigate_warzone():
+    print("You are navigating through the warzone filled with battlefields and war machines.")
+    print("Explosions rock the ground as you make your way through the chaos.")
+    # Add more actions and interactions here
+
+# Function to complete missions and gain trust
+def complete_missions():
+    print("Completing missions to gain the trust of key figures...")
+    print("You undertake dangerous missions to prove your loyalty.")
+    # Add logic for completing missions here
+
+# Function to obtain the third piece of the artifact
+def obtain_artifact():
+    print("Obtaining the third piece of the artifact amidst the chaos...")
+    print("You find the artifact in the heart of the battlefield, its power radiating through the air.")
+    # Add logic for obtaining the artifact here
+
+# Main function to run the fourth chapter
+def chapter_four():
+    print("Welcome to Chapter 4: Warzone!")
+    faction_leader()
+    navigate_warzone()
+    complete_missions()
+    obtain_artifact()
+
+if __name__ == "__main__":
+    chapter_four()
