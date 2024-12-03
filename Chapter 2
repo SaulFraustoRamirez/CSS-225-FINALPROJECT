@@ -1,0 +1,46 @@
+# This will create a named scavenger to interact with
+def scavenger():
+    global npcName
+    global response
+    # List of possible responses
+    responses = ["Help us repair this technology.", "Do you have any supplies?", "Watch out for the raiders!"]
+    npcNameChoice = ["Sam", "Alex", "Jordan", "Taylor"]
+    # Shuffle the list to get a random order
+    random.shuffle(npcNameChoice)
+    npcName = npcNameChoice[0]
+    print(f"{npcName}: Hello, I am {npcName}. Would you like to talk to me?")
+    random.shuffle(responses)
+    answer = input("Press 'y' to talk to the scavenger: ")
+    if answer == "y":
+        print(f"{npcName}: {responses[0]}")
+    else:
+        print(f"{npcName}: Goodbye")
+
+# Function to navigate through the dangerous environment
+def navigate_environment():
+    print("You are navigating through the dangerous environment filled with ruins and scavengers.")
+    print("The air is thick with smoke, and the ground is littered with debris.")
+    # Add more actions and interactions here
+
+# Function to help survivors by repairing technology
+def help_survivors():
+    print("Helping survivors by repairing a crucial piece of technology...")
+    print("You carefully examine the damaged device and begin making repairs.")
+    # Add logic for repairing technology here
+
+# Function to retrieve the first piece of the artifact
+def retrieve_artifact():
+    print("Retrieving the first piece of the artifact...")
+    print("You find the artifact hidden in the ruins, its surface covered in strange symbols.")
+    # Add logic for retrieving the artifact here
+
+# Main function to run the second chapter
+def chapter_two():
+    print("Welcome to Chapter 2: Dystopia!")
+    scavenger()
+    navigate_environment()
+    help_survivors()
+    retrieve_artifact()
+
+if __name__ == "__main__":
+    chapter_two()
