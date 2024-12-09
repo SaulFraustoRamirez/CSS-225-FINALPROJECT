@@ -1,89 +1,60 @@
 # CSS 225 FinalProject
 # My game is about a thrilling sci-fi adventure that takes players on a journey through multiple parallel universes.
-Chapter 1: Sci-Fi Adventure Game
-Setting: A high-tech lab.
 
-Objective: Interact with a scientist, explore the lab, solve puzzles, and enter a parallel universe.
+1. Where the Code is Hosted
+The code for this project is hosted on GitHub.
 
-Chapter 1: Sci-Fi Adventure Game
-scientist(): Creates a named scientist character with random responses.
+2. External Services
+There are no external services used in this project.
 
-explore_lab(): Describes the lab environment.
+3. Languages and Technologies
+Programming Language: Python
 
-solve_puzzles(): Describes the process of solving puzzles to activate a portal.
+Technologies: Python standard libraries
 
-enter_parallel_universe(): Describes entering the first parallel universe.
+4. System Requirements and Supported Applications
+Operating System: Any OS that supports Python (Windows, macOS, Linux)
 
-main(): Runs the first chapter of the game.
+Python Version: Python 3.7 or higher
 
+Dependencies: None (only standard Python libraries are used)
 
-Chapter 2: Dystopia
-Setting: A dystopian environment.
+5. Coding/Naming Conventions
+Variables: snake_case (e.g., npc_name, current_location)
 
-Objective: Interact with a scavenger, navigate through a dangerous environment, help survivors, and retrieve the first piece of an artifact.
+Functions: snake_case (e.g., explore_lab, solve_puzzles)
 
-Chapter 2: Dystopia
-scavenger(): Creates a named scavenger character with random responses.
+Classes: PascalCase (e.g., Character)
 
-navigate_environment(): Describes navigating a dangerous environment.
+Constants: UPPERCASE (e.g., MAX_HEALTH)
 
-help_survivors(): Describes helping survivors by repairing technology.
+6. How to Run/Build/Deploy the Program
+Running Locally:
 
-retrieve_artifact(): Describes retrieving the first piece of an artifact.
+Clone the repository from GitHub.
 
-chapter_two(): Runs the second chapter of the game.
+Navigate to the project directory.
 
+Run the main script using the command: python main.py
 
-Chapter 3: Utopia
-Setting: A utopian society.
+Deploying on PythonAnywhere:
 
-Objective: Interact with peaceful inhabitants, uncover a hidden threat, and secure the second piece of the artifact.
+Create an account on pythonanywhere.com.
 
+Go to the Files page and upload your Python game files.
 
+Once uploaded, click on the file and run it to ensure it works as expected.
 
-Chapter 3: Utopia
-inhabitant(): Creates a named inhabitant character with random responses.
+Go to the Consoles page and start a new console with the command: python3.7 /home/yourusername/main.py.
 
-interact_inhabitants(): Describes interacting with peaceful inhabitants.
+Share the console with others using the "Share with others" option.
 
-uncover_threat(): Describes uncovering a hidden threat.
+7. An Overview of the Architecture
+The game is divided into multiple chapters, each represented by a separate Python file.
 
-secure_artifact(): Describes securing the second piece of the artifact.
+Each chapter contains functions and interactions specific to that part of the game.
 
-chapter_three(): Runs the third chapter of the game.
+The main script (main.py) orchestrates the flow of the game by calling functions from each chapter.
 
-
-Chapter 4: Warzone
-Setting: A warzone.
-
-Objective: Interact with a faction leader, navigate through the warzone, complete missions, and obtain the third piece of the artifact.
-
-Chapter 4: Warzone
-faction_leader(): Creates a named faction leader character with random responses.
-
-navigate_warzone(): Describes navigating a warzone.
-
-complete_missions(): Describes completing missions to gain trust.
-
-obtain_artifact(): Describes obtaining the third piece of the artifact.
-
-chapter_four(): Runs the fourth chapter of the game.
-
-
-Chapter 5: Fractured Reality
-Setting: A fractured reality where elements from different universes merge and collide.
-
-Objective: Interact with a local, navigate through the fractured reality, solve final puzzles, and assemble the artifact to restore balance to the multiverse.
-
-The game involves interacting with various characters, solving puzzles, and making decisions that affect the outcome of the story. Each chapter introduces new challenges and environments, creating an engaging and immersive experience for the player.
-
-Chapter 5: Fractured Reality
-local(): Creates a named local character with random responses.
-
-navigate_fractured_reality(): Describes navigating a fractured reality.
-
-solve_final_puzzles(): Describes solving final puzzles to stabilize the multiverse.
-
-assemble_artifact(): Describes assembling the artifact to restore balance.
-
-chapter_five(): Runs the fifth chapter of the game.
+8. How to Start the Program (Start the Game)
+To start the game, run the main.py script. This will initiate the game and guide the player through the different chapters.
